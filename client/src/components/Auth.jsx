@@ -23,36 +23,55 @@ const Auth = () => {
         setForm({ ...form, [e.target.name]: e.target.value });
     }
 
+    axios.defaults.baseURL = 'https://real-time-chat-application-devtalk-hub.onrender.com/auth';
+    axios.defaults.withCredentials = true; // Ensure this is needed and set correctly
+
     // const handleSubmit = async (e) => {
     //     e.preventDefault();
     
-    //     const { username, password, phoneNumber, avatarURL } = form;
-    
-    //     const URL = 'https://real-time-chat-application-devtalk-hub.onrender.com';
-    
     //     try {
-    //         const { data: { token, userId, hashedPassword, fullName } } = await axios.post(`${URL}/${isSignup ? 'signup' : 'login'}`, {
-    //             username, password, fullName: form.fullName, phoneNumber, avatarURL,
+    //         const response = await fetch(`${axios.defaults.baseURL}/${isSignup ? 'signup' : 'login'}`, {
+    //             method: 'POST',
+    //             headers: {
+    //                 'Content-Type': 'application/json',
+    //             },
+    //             body: JSON.stringify({
+    //                 username: form.username,
+    //                 password: form.password,
+    //                 fullName: form.fullName,
+    //                 phoneNumber: form.phoneNumber,
+    //                 avatarURL: form.avatarURL,
+    //             }),
+    //             credentials: 'include' // Make sure credentials are sent
     //         });
     
+    //         if (!response.ok) {
+    //             throw new Error(`HTTP error! status: ${response.status}`);
+    //         }
+    
+    //         const data = await response.json();
+    
+    //         const { token, userId, hashedPassword, fullName } = data;
+    
     //         cookies.set('token', token);
-    //         cookies.set('username', username);
+    //         cookies.set('username', form.username);
     //         cookies.set('fullName', fullName);
     //         cookies.set('userId', userId);
     
-    //         if(isSignup) {
-    //             cookies.set('phoneNumber', phoneNumber);
-    //             cookies.set('avatarURL', avatarURL);
+    //         if (isSignup) {
+    //             cookies.set('phoneNumber', form.phoneNumber);
+    //             cookies.set('avatarURL', form.avatarURL);
     //             cookies.set('hashedPassword', hashedPassword);
     //         }
     
     //         window.location.reload();
     //     } catch (error) {
-            
-    //         console.error('Error:', error); // For debugging in development only
-            
+    //         console.error('Error:', error);
     //     }
     // };
+    
+    
+
     
     const handleSubmit = async (e) => {
         e.preventDefault();
@@ -60,10 +79,12 @@ const Auth = () => {
         const { username, password, phoneNumber, avatarURL } = form;
 
         // const URL = 'http://localhost:5000/auth';
-        const URL = 'https://real-time-chat-application-devtalk-hub.onrender.com';
+        // const URL = 'https://real-time-chat-application-devtalk-hub.onrender.com';
         // const URL = process.env.REACT_APP_URL;
+        axios.defaults.baseURL = 'https://real-time-chat-application-devtalk-hub.onrender.com/auth'; // Replace with your backend URL
+        axios.defaults.withCredentials = true;
 
-        const { data: { token, userId, hashedPassword, fullName } } = await axios.post(`${URL}/${isSignup ? 'signup' : 'login'}`, {
+        const { data: { token, userId, hashedPassword, fullName } } = await axios.post(`${axios.defaults.baseURL}/${isSignup ? 'signup' : 'login'}`, {
             username, password, fullName: form.fullName, phoneNumber, avatarURL,
         });
 

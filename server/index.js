@@ -16,10 +16,9 @@ const authToken = process.env.TWILIO_AUTH_TOKEN;
 const messagingServiceSid = process.env.TWILIO_MESSAGING_SERVICE_SID;
 const twilioClient = require('twilio')(accountSid, authToken);
 
-app.use(cors());
+// CORS configuration
 app.use(cors({
-    origin: 'http://localhost:3000/', 
-    methods: ['GET', 'POST', 'PUT', 'DELETE'],
+    origin: 'http://localhost:3000', // Your frontend URL
     credentials: true
 }));
 

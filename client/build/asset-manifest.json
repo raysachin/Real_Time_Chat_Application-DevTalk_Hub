@@ -1,25 +1,25 @@
 {
   "files": {
-    "main.css": "/static/css/main.438fe5f2.css",
-    "main.js": "/static/js/main.177916bd.js",
-    "static/js/141.11ea37e2.chunk.js": "/static/js/141.11ea37e2.chunk.js",
-    "static/js/209.b9141f0c.chunk.js": "/static/js/209.b9141f0c.chunk.js",
-    "static/js/717.6374386a.chunk.js": "/static/js/717.6374386a.chunk.js",
-    "static/js/829.1c2b1ade.chunk.js": "/static/js/829.1c2b1ade.chunk.js",
+    "main.css": "/static/css/main.4479063f.css",
+    "main.js": "/static/js/main.646a4b67.js",
+    "static/js/575.42c8e642.chunk.js": "/static/js/575.42c8e642.chunk.js",
+    "static/js/981.02fd1d2b.chunk.js": "/static/js/981.02fd1d2b.chunk.js",
+    "static/js/801.c77bf63a.chunk.js": "/static/js/801.c77bf63a.chunk.js",
+    "static/js/744.b5f4cc55.chunk.js": "/static/js/744.b5f4cc55.chunk.js",
     "static/media/EmojiOneColor.woff2": "/static/media/EmojiOneColor.90ee5fb894c8d349bc54.woff2",
     "static/media/NotoColorEmoji-flags.woff2": "/static/media/NotoColorEmoji-flags.148141acfb7ce6e4f383.woff2",
     "static/media/signup.jpg": "/static/media/signup.f535f5e21204d29d2009.jpg",
     "static/media/devtalk.png": "/static/media/devtalk.be2314766019c3338a33.png",
     "index.html": "/index.html",
-    "main.438fe5f2.css.map": "/static/css/main.438fe5f2.css.map",
-    "main.177916bd.js.map": "/static/js/main.177916bd.js.map",
-    "141.11ea37e2.chunk.js.map": "/static/js/141.11ea37e2.chunk.js.map",
-    "209.b9141f0c.chunk.js.map": "/static/js/209.b9141f0c.chunk.js.map",
-    "717.6374386a.chunk.js.map": "/static/js/717.6374386a.chunk.js.map",
-    "829.1c2b1ade.chunk.js.map": "/static/js/829.1c2b1ade.chunk.js.map"
+    "main.4479063f.css.map": "/static/css/main.4479063f.css.map",
+    "main.646a4b67.js.map": "/static/js/main.646a4b67.js.map",
+    "575.42c8e642.chunk.js.map": "/static/js/575.42c8e642.chunk.js.map",
+    "981.02fd1d2b.chunk.js.map": "/static/js/981.02fd1d2b.chunk.js.map",
+    "801.c77bf63a.chunk.js.map": "/static/js/801.c77bf63a.chunk.js.map",
+    "744.b5f4cc55.chunk.js.map": "/static/js/744.b5f4cc55.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.438fe5f2.css",
-    "static/js/main.177916bd.js"
+    "static/css/main.4479063f.css",
+    "static/js/main.646a4b67.js"
   ]
 }

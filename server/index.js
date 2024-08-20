@@ -48,7 +48,7 @@ app.post('/', (req, res) => {
                             res
                             .status(500)
                             .send({ message: 'Error sending message' });
-
+                            
                         });
                 }
             })
@@ -62,9 +62,4 @@ app.post('/', (req, res) => {
 
 app.use('/auth', authRoutes);
 
-app.listen(PORT, () => {
-    res
-    .status(200)
-    .send(`Server is running on port ${PORT}`);
-
-});
+app.listen(PORT, () => console.log(`Server running on port ${PORT}`));

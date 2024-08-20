@@ -17,6 +17,8 @@ const messagingServiceSid = process.env.TWILIO_MESSAGING_SERVICE_SID;
 const twilioClient = require('twilio')(accountSid, authToken);
 
 app.use(cors());
+app.use(cors({ origin: 'http://localhost:3000' }));
+
 app.use(express.json());
 app.use(express.urlencoded());
 
@@ -46,7 +48,7 @@ app.post('/', (req, res) => {
                             res
                             .status(500)
                             .send({ message: 'Error sending message' });
-                            
+
                         });
                 }
             })
@@ -60,4 +62,9 @@ app.post('/', (req, res) => {
 
 app.use('/auth', authRoutes);
 
-app.listen(PORT, () => console.log(`Server running on port ${PORT}`));
+app.listen(PORT, () => {
+    res
+    .status(200)
+    .send(`Server is running on port ${PORT}`);
+
+});

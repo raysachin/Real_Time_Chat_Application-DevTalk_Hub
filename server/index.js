@@ -18,7 +18,8 @@ const twilioClient = require('twilio')(accountSid, authToken);
 
 // CORS configuration
 app.use(cors({
-    origin: 'http://localhost:3000', // Your frontend URL
+    // origin: 'http://localhost:3000', // Your frontend URL of local server when connected to Cloud Backkend
+    origin: 'https://real-time-chat-application-devtalk-hub-9zf8.onrender.com',
     credentials: true
 }));
 

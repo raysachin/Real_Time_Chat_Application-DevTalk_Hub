@@ -9,7 +9,7 @@
     "cors": "^2.8.5",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
-    "react-scripts": "5.0.1",
+    "react-scripts": "^5.0.1",
     "stream-chat": "^8.11.0",
     "stream-chat-react": "^10.9.0",
     "universal-cookie": "^6.1.0",
